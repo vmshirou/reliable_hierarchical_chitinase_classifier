@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chitinase-classifier"
+version = "0.1.0"
+description = "Hierarchical deep learning classifier for chitinase identification"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "tensorflow>=2.15,<3",
+  "scikit-learn>=1.4,<2",
+  "joblib>=1.3,<2",
+  "shap>=0.45,<1",
+  "transformers>=4.37,<5",
+  "propy3>=1.1.1,<2",
+  "tqdm>=4.66,<5",
+  "gdown>=5.2,<6",
+]
+
+[project.scripts]
+chitinase-clf = "chitinase_clf.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

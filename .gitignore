@@ -1,0 +1,28 @@
+datasets/*
+!datasets/First Level/
+datasets/First Level/*
+!datasets/First Level/pre_processed/
+datasets/First Level/pre_processed/*
+!datasets/Second_Level/
+datasets/Second_Level/*
+!datasets/pre_processed/
+datasets/pre_processed/*
+experiments/
+notebooks/tunning_FL/*
+notebooks/tunning_SL/*
+notebooks/tunning_TL/*
+notebooks/1L_train/*
+!notebooks/1L_train/train.py
+notebooks/2L_train/*
+!notebooks/2L_train/train.py
+notebooks/history*
+models/*
+!models/First_Level/
+models/First_Level/*
+!models/Second_Level/
+models/Second_Level/*
+models/downloaded/
+models/downloaded/**
+models/downloaded/protbert/
+.agents/PROJECT_CONTEXT.md
+.agents/COLAB_GITHUB_GUIDE.md
